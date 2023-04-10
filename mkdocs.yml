@@ -1,0 +1,48 @@
+# Fichier de configuration du site 
+site_name: bac à sable info
+
+#Métadonnées
+site_author: "EM - GYETO"
+
+theme: 
+  name: material # autres thèmes : https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
+  # Configuration du comportement de la navigation, cf : https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
+  features: 
+      - navigation.instant # active XHR https://fr.wikipedia.org/wiki/XMLHttpRequest
+      - navigation.tabs # Menu de navigation horizontal sous l'en-tête sauf sur appareil mobile
+      - navigation.top # bouton pour remonter tout en haut de la page
+      - toc.integrate # Table Of Content, table des matières intégrée dans la barre verticale de navigation
+      - header.autohide # masquage automatique de l'en tête du site lorsque l'on descend dans la page
+
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.keys:  # Touches du clavier.  ++ctrl+d++
+      separator: "\uff0b"
+  - pymdownx.tasklist:            # Cases à cocher  - [ ]  et - [x]
+      custom_checkbox: true    #   avec cases d'origine
+      clickable_checkbox: true    #   et cliquables.
+
+
+nav:
+  - 'Accueil': 'index.md'
+  - '1M': 
+    - 'Plan d''études': '1M/1MPE.md'
+  - '2M':
+    - 'Plan d''études': '2M/2MPE.md'
+    - 'Algorithmie': '2M/2M-algo.md'
+  - 'OC':
+    - 'Plan d''études': 'OC/OCPE.md'
+    - 'Git': 'OC/OC-git.md'
+  - 'Exemples': 'exemples.md'
+    
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
