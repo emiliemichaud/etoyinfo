@@ -1,6 +1,6 @@
 #Utiliser github
 <!-- https://docs.github.com/fr/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github -->
-##Créer un git à partir d'un dossier local existant (sans git encore créée localement)
+##Créer un git à partir d'un dossier local existant
 
 - Créer un repository sur github : add a readme
 - Se placer dans mon dossier local : cd /Users/user/monDossierExistant
@@ -11,3 +11,10 @@
   git remote add origin https://github.com/....git 
 - git remote -v : pour vérifier l'adresse du remote 
 - git push -u origin main :  Push les changements locaux sur le remote que l'on a spécifié comme origine
+
+!!! info "si erreur fetch first"
+    Si erreur ! [rejected] main -> main (fetch first) error :
+
+    Peut arriver par exemple si un README existait déjà.
+
+    git push -f origin main
