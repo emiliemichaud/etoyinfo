@@ -4,17 +4,19 @@
 
 - Créer un repository sur github : add a readme
 - Se placer dans mon dossier local : cd /Users/user/monDossierExistant
-- git init -b main
-- git add *
-- git commit -m 'initial commit'
+- `git init -b main`
+- `git add *`
+- `git commit -m 'initial commit'`
 - Copier le lien fourni sur github https et le lien à mon dossier local : 
-  git remote add origin https://github.com/....git 
-- git remote -v : pour vérifier l'adresse du remote 
-- git push -u origin main :  Push les changements locaux sur le remote que l'on a spécifié comme origine
+  `git remote add origin https://github.com/....git `
+- `git remote -v` : pour vérifier l'adresse du remote 
+- `git push -u origin main` :  Push les changements locaux sur le remote que l'on a spécifié comme origine
+- `git push --set-upstream origin main` 
 
-!!! info "si erreur fetch first"
+!!! info "en cas d'erreur 'fetch first'"
     Si erreur ! [rejected] main -> main (fetch first) error :
 
     Peut arriver par exemple si un README existait déjà.
 
     git push -f origin main
+
