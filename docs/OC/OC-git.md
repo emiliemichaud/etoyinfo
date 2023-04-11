@@ -14,12 +14,16 @@
 - `git push --set-upstream origin main` 
 
 !!! info "en cas d'erreur 'fetch first'"
-    Si erreur ! [rejected] main -> main (fetch first) error :
+    Si l'erreur ! [rejected] main -> main (fetch first) error apparait (par exemple si un README existait déjà) :
 
-    Peut arriver par exemple si un README existait déjà.
+    `git push -f origin main`
 
-    git push -f origin main
+##Enregistrer des modifications
+- `git add * ` : ajouter tous les nouveaux fichiers 
+- `git commit -m "[message descriptif]"` : enregistre les changements dans l'historique des versions 
+- `git pull`: Récupère tout l'historique du dépôt nommé et incorpore les modifications
+- `git push` : Envoie tous les commits de la branche locale vers GitHub
+- `git fetch` : permet de vérifier si le dépôt contient des mises à jour que vous n'auriez pas en local
 
-Commandes git les plus utilisées :
-
+##Commandes git les plus utilisées :
 [cheat-sheet](../ressources/github-cheatsheet.pdf)
