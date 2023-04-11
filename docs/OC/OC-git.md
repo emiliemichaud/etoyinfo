@@ -7,7 +7,7 @@
 - `git init -b main`
 - `git add *`
 - `git commit -m 'initial commit'`
-- Copier le lien fourni sur github https et le lien à mon dossier local : 
+- Copier le lien fourni sur github https et le lier au dossier local : 
   `git remote add origin https://github.com/....git `
 - `git remote -v` : pour vérifier l'adresse du remote 
 - `git push -u origin main` :  Push les changements locaux sur le remote que l'on a spécifié comme origine
@@ -20,3 +20,6 @@
 
     git push -f origin main
 
+Commandes git les plus utilisées :
+
+[cheat-sheet](../ressources/github-cheatsheet.pdf)
