@@ -36,7 +36,7 @@ nav:
     - 'Plan d''études': '1M/1MPE.md'
   - '2M':
     - 'Plan d''études': '2M/2MPE.md'
-    - 'Algorithmie': '2M/2M-algo.md'
+    # - 'Algorithmie': '2M/2M-algo.md'
   - 'OC':
     - 'Plan d''études': 'OC/OCPE.md'
     - 'Git': 'OC/OC-git.md'

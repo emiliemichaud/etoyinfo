@@ -14,14 +14,12 @@
         <link rel="prev" href="../OCPE/">
       
       
-        <link rel="next" href="../../exemples/">
-      
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>Git - bac à sable info</title>
+        <title>Git - Informatique au Gymnase d'Etoy</title>
       
     
     
@@ -83,7 +81,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="bac à sable info" class="md-header__button md-logo" aria-label="bac à sable info" data-md-component="logo">
+    <a href="../.." title="Informatique au Gymnase d&#39;Etoy" class="md-header__button md-logo" aria-label="Informatique au Gymnase d'Etoy" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -96,7 +94,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            bac à sable info
+            Informatique au Gymnase d'Etoy
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -221,18 +219,6 @@
   
 
       
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../exemples/" class="md-tabs__link">
-      Exemples
-    </a>
-  </li>
-
-      
     </ul>
   </div>
 </nav>
@@ -256,13 +242,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="bac à sable info" class="md-nav__button md-logo" aria-label="bac à sable info" data-md-component="logo">
+    <a href="../.." title="Informatique au Gymnase d&#39;Etoy" class="md-nav__button md-logo" aria-label="Informatique au Gymnase d'Etoy" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    bac à sable info
+    Informatique au Gymnase d'Etoy
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -485,6 +471,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#enregistrer-des-modifications" class="md-nav__link">
+    Enregistrer des modifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commandes-git-les-plus-utilisees" class="md-nav__link">
+    Commandes git les plus utilisées :
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -496,21 +496,6 @@
           
         </ul>
       </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../exemples/" class="md-nav__link">
-        Exemples
-      </a>
     </li>
   
 
@@ -536,20 +521,30 @@
 <ul>
 <li>Créer un repository sur github : add a readme</li>
 <li>Se placer dans mon dossier local : cd /Users/user/monDossierExistant</li>
-<li>git init -b main</li>
-<li>git add *</li>
-<li>git commit -m 'initial commit'</li>
-<li>Copier le lien fourni sur github https et le lien à mon dossier local : 
-  git remote add origin https://github.com/....git </li>
-<li>git remote -v : pour vérifier l'adresse du remote </li>
-<li>git push -u origin main :  Push les changements locaux sur le remote que l'on a spécifié comme origine</li>
+<li><code>git init -b main</code></li>
+<li><code>git add *</code></li>
+<li><code>git commit -m 'initial commit'</code></li>
+<li>Copier le lien fourni sur github https et le lier au dossier local : 
+  <code>git remote add origin https://github.com/....git</code></li>
+<li><code>git remote -v</code> : pour vérifier l'adresse du remote </li>
+<li><code>git push -u origin main</code> :  Push les changements locaux sur le remote que l'on a spécifié comme origine</li>
+<li><code>git push --set-upstream origin main</code> </li>
 </ul>
 <div class="admonition info">
-<p class="admonition-title">si erreur fetch first</p>
-<p>Si erreur ! [rejected] main -&gt; main (fetch first) error :</p>
-<p>Peut arriver par exemple si un README existait déjà.</p>
-<p>git push -f origin main</p>
+<p class="admonition-title">en cas d'erreur 'fetch first'</p>
+<p>Si l'erreur ! [rejected] main -&gt; main (fetch first) error apparait (par exemple si un README existait déjà) :</p>
+<p><code>git push -f origin main</code></p>
 </div>
+<h2 id="enregistrer-des-modifications">Enregistrer des modifications</h2>
+<ul>
+<li><code>git add *</code> : ajouter tous les nouveaux fichiers </li>
+<li><code>git commit -m "[message descriptif]"</code> : enregistre les changements dans l'historique des versions </li>
+<li><code>git pull</code>: Récupère tout l'historique du dépôt nommé et incorpore les modifications</li>
+<li><code>git push</code> : Envoie tous les commits de la branche locale vers GitHub</li>
+<li><code>git fetch</code> : permet de vérifier si le dépôt contient des mises à jour que vous n'auriez pas en local</li>
+</ul>
+<h2 id="commandes-git-les-plus-utilisees">Commandes git les plus utilisées :</h2>
+<p><a href="../../ressources/github-cheatsheet.pdf">cheat-sheet</a></p>
 
 
 

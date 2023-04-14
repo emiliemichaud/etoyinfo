@@ -1,6 +1,6 @@
-# Bienvenue sur le site d'informatique 
+# Bienvenue sur le site d'informatique du Gymnase d'Etoy
 
 Différentes informations sont à disposition : 
 
-- les plans d'études
-- [Accès au moodle info](https://moodle.gyeto-info.ch)
+- Les plans d'études
+- [Moodle informatique](https://moodle.gyeto-info.ch)
