@@ -40,8 +40,8 @@ nav:
   - 'OC':
     - 'Plan d''études': 'OC/OCPE.md'    
   - 'Outils':
-    - 'Git': 'Outils/utiliser_git.md'
-    - 'VSCode': 'Outils/utiliser_vscode.md'
+    - 'Git': 'outils/utiliser_git.md'
+    - 'VSCode': 'outils/utiliser_vscode.md'
     
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
