@@ -43,9 +43,10 @@
 - `git status` : pour voir l'état du git local
 S'il apparaît "You have unmerged paths.", deux possibilités : soit résoudre le conflit (fix conflicts, soit annuler le merge)
 
-##Erreur après un git pull (non liée à un merge)
+<!-- ##Erreur après un git pull (non liée à un merge)
 "hint: You have divergent branches and need to specify how to reconcile them.
 hint: You can replace "git config" with "git config --global" to set a default
 hint: preference for all repositories. You can also pass --rebase, --no-rebase,
 hint: or --ff-only on the command line to override the configured default per
 hint: invocation."
+Passer en deux étapes avec git fetch puis git merge  -->
