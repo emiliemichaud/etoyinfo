@@ -525,8 +525,29 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#realiser-une-fusion-avec-les-changements-depot-et-local" class="md-nav__link">
+    Réaliser une fusion avec les changements dépôt et local
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#commandes-git-les-plus-utilisees" class="md-nav__link">
     Commandes git les plus utilisées :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resolution-dun-conflit" class="md-nav__link">
+    Résolution d'un conflit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erreur-apres-un-git-pull-non-liee-a-un-merge" class="md-nav__link">
+    Erreur après un git pull (non liée à un merge)
   </a>
   
 </li>
@@ -599,7 +620,7 @@
 <ul>
 <li><code>git add *</code> : ajouter tous les nouveaux fichiers </li>
 <li><code>git commit -m "[message descriptif]"</code> : enregistre les changements dans l'historique des versions </li>
-<li><code>git pull</code>: Récupère tout l'historique du dépôt nommé et incorpore les modifications</li>
+<li><code>git pull</code>: Récupère tout l'historique du dépôt nommé et incorpore les modifications. git pull est la fusion de deux commandes <code>git fetch</code>(pour récupérer le dépôt distant vers le dépôt local) et <code>git merge</code> (pour les fusionner).  </li>
 <li><code>git push</code> : Envoie tous les commits de la branche locale vers GitHub</li>
 <li><code>git fetch</code> : permet de vérifier si le dépôt contient des mises à jour que vous n'auriez pas en local</li>
 </ul>
@@ -607,8 +628,32 @@
 <ul>
 <li><code>git rm --cached FILENAME</code></li>
 </ul>
+<h2 id="realiser-une-fusion-avec-les-changements-depot-et-local">Réaliser une fusion avec les changements dépôt et local</h2>
+<ul>
+<li><code>git checkout main</code>: se placer sur la branche principale </li>
+<li><code>git merge mybranch</code>: pour grouper mybranch dans main </li>
+</ul>
 <h2 id="commandes-git-les-plus-utilisees">Commandes git les plus utilisées :</h2>
-<p><a href="../../ressources/github-cheatsheet.pdf">cheat-sheet</a></p>
+<ul>
+<li><code>git branch -r</code>: voir les branches du dépôt
+<a href="../../ressources/github-cheatsheet.pdf">cheat-sheet</a></li>
+</ul>
+<h2 id="resolution-dun-conflit">Résolution d'un conflit</h2>
+<ul>
+<li>
+<p>Si un fichier est modifié en local et sur le dépôt distant, on se trouve dans le cas d'un conflit à résoudre après avoir réalisé un git pull.</p>
+</li>
+<li>
+<p><code>git status</code> : pour voir l'état du git local
+S'il apparaît "You have unmerged paths.", deux possibilités : soit résoudre le conflit (fix conflicts, soit annuler le merge)</p>
+</li>
+</ul>
+<h2 id="erreur-apres-un-git-pull-non-liee-a-un-merge">Erreur après un git pull (non liée à un merge)</h2>
+<p>"hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation."</p>
 
 
 

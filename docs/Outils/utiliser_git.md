@@ -21,7 +21,7 @@
 ##Enregistrer des modifications
 - `git add * ` : ajouter tous les nouveaux fichiers 
 - `git commit -m "[message descriptif]"` : enregistre les changements dans l'historique des versions 
-- `git pull`: Récupère tout l'historique du dépôt nommé et incorpore les modifications
+- `git pull`: Récupère tout l'historique du dépôt nommé et incorpore les modifications. git pull est la fusion de deux commandes `git fetch`(pour récupérer le dépôt distant vers le dépôt local) et `git merge` (pour les fusionner).  
 - `git push` : Envoie tous les commits de la branche locale vers GitHub
 - `git fetch` : permet de vérifier si le dépôt contient des mises à jour que vous n'auriez pas en local
 
@@ -37,7 +37,15 @@
 - `git branch -r`: voir les branches du dépôt
 [cheat-sheet](../ressources/github-cheatsheet.pdf)
 
-##Erreurs : 
-- Après un git pull il peut y avoir l'erreur "hint: You have divergent branches and need to specify how to reconcile them.".
-git pull est la fusion de deux commandes `git fetch`(pour récupérer le dépôt distant vers le dépôt local) et `git merge` (pour les fusionner)
-Pour solutionner cette 
+##Résolution d'un conflit 
+- Si un fichier est modifié en local et sur le dépôt distant, on se trouve dans le cas d'un conflit à résoudre après avoir réalisé un git pull.
+
+- `git status` : pour voir l'état du git local
+S'il apparaît "You have unmerged paths.", deux possibilités : soit résoudre le conflit (fix conflicts, soit annuler le merge)
+
+##Erreur après un git pull (non liée à un merge)
+"hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation."
