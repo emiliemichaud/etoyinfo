@@ -1,3 +1,3 @@
-# Site de l'enseignement informatique au Gymnase d'Etoy
+## Site de l'enseignement informatique au Gymnase d'Etoy
 
-https://emiliemichaud.github.io/etoyinfo/
+Dépôt correspondant au site : [https://emiliemichaud.github.io/etoyinfo/](https://emiliemichaud.github.io/etoyinfo/).
