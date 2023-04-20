@@ -21,8 +21,8 @@
 *.zip
 
 # # Ignore all files in the 'EM_gitignore' subfolder.
-/docs/EM_gitignore/
-/site/
+EM_gitignore/
+site/
 
 # # Logs and databases #
 # ######################
