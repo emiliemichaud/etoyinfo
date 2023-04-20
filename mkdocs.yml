@@ -45,8 +45,8 @@ nav:
   - 'OC':
     - 'Plan d''études': 'OC/OCPE.md'    
   - 'Outils':
-    - 'Git': 'outils/utiliser_git.md'
-    - 'VSCode': 'outils/utiliser_vscode.md'
+    - 'Git': 'outils/git.md'
+    - 'VSCode': 'outils/vscode.md'
     
 
 # repo_url: https://github.com/emiliemichaud/etoyinfo
