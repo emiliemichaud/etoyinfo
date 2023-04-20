@@ -11,17 +11,13 @@
       
       
       
-        <link rel="prev" href="../..">
-      
-      
-        <link rel="next" href="../../2M/2MPE/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>Plan d'études - Informatique au Gymnase d'Etoy</title>
+        <title>Utiliser git - Informatique au Gymnase d'Etoy</title>
       
     
     
@@ -69,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#plan-detudes-dinformatique-en-1m" class="md-skip">
+        <a href="#utiliser-github" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Plan d'études
+              Utiliser git
             
           </span>
         </div>
@@ -174,15 +170,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../1M/1MPE/" class="md-tabs__link">
         1M
       </a>
     </li>
@@ -230,7 +224,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../Outils/utiliser-git.md" class="md-tabs__link">
+      <a href="../utiliser-git.md" class="md-tabs__link">
         Outils
       </a>
     </li>
@@ -292,16 +286,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
       
       
       
@@ -310,7 +302,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           1M
@@ -321,21 +313,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../1M/1MPE/" class="md-nav__link">
         Plan d'études
       </a>
-      
     </li>
   
 
@@ -480,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Outils/utiliser-git.md" class="md-nav__link">
+      <a href="../utiliser-git.md" class="md-nav__link">
         Git
       </a>
     </li>
@@ -494,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Outils/utiliser_vscode/" class="md-nav__link">
+      <a href="../utiliser_vscode/" class="md-nav__link">
         VSCode
       </a>
     </li>
@@ -523,15 +505,40 @@
                   
 
 
-<h1 id="plan-detudes-dinformatique-en-1m">Plan d'études d'informatique en 1M</h1>
-<p>Cinq thèmes sont au programme de 1M :</p>
+<h1 id="utiliser-github">Utiliser github</h1>
+<!-- https://docs.github.com/fr/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github -->
+<h2 id="creer-un-git-a-partir-dun-dossier-local-existant">Créer un git à partir d'un dossier local existant</h2>
 <ul>
-<li>Représentation et structuration de l’information </li>
-<li>Introduction à l’algorithmique </li>
-<li>Introduction à la programmation </li>
-<li>Architecture des ordinateurs </li>
-<li>Introduction aux enjeux sociaux </li>
+<li>Créer un repository sur github : add a readme</li>
+<li>Se placer dans mon dossier local : cd /Users/user/monDossierExistant</li>
+<li><code>git init -b main</code></li>
+<li><code>git add *</code></li>
+<li><code>git commit -m 'initial commit'</code></li>
+<li>Copier le lien fourni sur github https et le lier au dossier local : 
+  <code>git remote add origin https://github.com/....git</code></li>
+<li><code>git remote -v</code> : pour vérifier l'adresse du remote </li>
+<li><code>git push -u origin main</code> :  Push les changements locaux sur le remote que l'on a spécifié comme origine</li>
+<li><code>git push --set-upstream origin main</code> </li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">en cas d'erreur 'fetch first'</p>
+<p>Si l'erreur ! [rejected] main -&gt; main (fetch first) error apparait (par exemple si un README existait déjà) :</p>
+<p><code>git push -f origin main</code></p>
+</div>
+<h2 id="enregistrer-des-modifications">Enregistrer des modifications</h2>
+<ul>
+<li><code>git add *</code> : ajouter tous les nouveaux fichiers </li>
+<li><code>git commit -m "[message descriptif]"</code> : enregistre les changements dans l'historique des versions </li>
+<li><code>git pull</code>: Récupère tout l'historique du dépôt nommé et incorpore les modifications</li>
+<li><code>git push</code> : Envoie tous les commits de la branche locale vers GitHub</li>
+<li><code>git fetch</code> : permet de vérifier si le dépôt contient des mises à jour que vous n'auriez pas en local</li>
+</ul>
+<h2 id="annuler-le-suivi-dun-fichier-deja-archive">Annuler le suivi d'un fichier déjà archivé</h2>
+<ul>
+<li><code>git rm --cached FILENAME</code></li>
+</ul>
+<h2 id="commandes-git-les-plus-utilisees">Commandes git les plus utilisées :</h2>
+<p><a href="../../ressources/github-cheatsheet.pdf">cheat-sheet</a></p>
 
 
 

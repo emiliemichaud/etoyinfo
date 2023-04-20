@@ -11,7 +11,7 @@
       
       
       
-        <link rel="prev" href="../OCPE/">
+        <link rel="prev" href="../../OC/OCPE/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -19,7 +19,7 @@
     
     
       
-        <title>Git - Informatique au Gymnase d'Etoy</title>
+        <title>VSCode - Informatique au Gymnase d'Etoy</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#utiliser-github" class="md-skip">
+        <a href="#comment-coder-en-python-sur-vs-code-sur-macos" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git
+              VSCode
             
           </span>
         </div>
@@ -204,6 +204,22 @@
         
   
   
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../OC/OCPE/" class="md-tabs__link">
+        OC
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
     
   
 
@@ -212,8 +228,8 @@
   
   
     <li class="md-tabs__item">
-      <a href="../OCPE/" class="md-tabs__link md-tabs__link--active">
-        OC
+      <a href="../utiliser-git.md" class="md-tabs__link md-tabs__link--active">
+        Outils
       </a>
     </li>
   
@@ -372,16 +388,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
       
@@ -390,7 +404,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           OC
@@ -403,8 +417,59 @@
   
   
     <li class="md-nav__item">
-      <a href="../OCPE/" class="md-nav__link">
+      <a href="../../OC/OCPE/" class="md-nav__link">
         Plan d'études
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Outils
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Outils
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utiliser-git.md" class="md-nav__link">
+        Git
       </a>
     </li>
   
@@ -426,54 +491,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Git
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Git
+        VSCode
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#creer-un-git-a-partir-dun-dossier-local-existant" class="md-nav__link">
-    Créer un git à partir d'un dossier local existant
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enregistrer-des-modifications" class="md-nav__link">
-    Enregistrer des modifications
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commandes-git-les-plus-utilisees" class="md-nav__link">
-    Commandes git les plus utilisées :
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -501,36 +521,76 @@
                   
 
 
-<h1 id="utiliser-github">Utiliser github</h1>
-<!-- https://docs.github.com/fr/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github -->
-<h2 id="creer-un-git-a-partir-dun-dossier-local-existant">Créer un git à partir d'un dossier local existant</h2>
+<h1 id="comment-coder-en-python-sur-vs-code-sur-macos">Comment coder en python sur VS Code sur MacOS</h1>
+<!-- EM 20.04.23 v1 -->
+
+<ol>
+<li>Télécharger et installer Visual Studio Code (gratuit)</li>
+<li>Dans la barre de gauche, descriptions des icônes : </li>
+<li>fichiers : explorateur pour voir les fichiers ouverts</li>
+<li>loupe : pour recherche dans fichier</li>
+<li>Git </li>
+<li>Debugger </li>
+<li>Installer des extensions</li>
+<li>Ajouter extensions Python (la plus populaire)</li>
+<li>Pour pouvoir lancer VSCode avec le terminal via la commande Code il faut : </li>
+<li>Ouvrir le menu Commande Palette (Cmd+Shift+P)</li>
+<li>Taper shell commande et cliquer sur Shell Command: Install 'code' command in PATH command.</li>
+<li>VSCode pourra être démarré à partir de la commande <code>code .</code></li>
+<li>Un workspace est un endroit pour lequel on peut avoir ses propres préférences et spécificités.
+Chaque projet dans vscode doit être un workspace. Il faut donc toujours ouvrir vos projet par "menu File &gt; open folder" et pas en ouvrant seulement des fichiers contenu dans votre projet avec "menu File &gt; open folder".</li>
+</ol>
+<h1 id="creation-dun-environnement-virtuel-en-python">Création d'un environnement virtuel en python</h1>
+<p>Un environnement virtuel permet d'installer des packages python uniquement dans cet environnement (et non dans l'ensemble de base des packages). </p>
 <ul>
-<li>Créer un repository sur github : add a readme</li>
-<li>Se placer dans mon dossier local : cd /Users/user/monDossierExistant</li>
-<li><code>git init -b main</code></li>
-<li><code>git add *</code></li>
-<li><code>git commit -m 'initial commit'</code></li>
-<li>Copier le lien fourni sur github https et le lier au dossier local : 
-  <code>git remote add origin https://github.com/....git</code></li>
-<li><code>git remote -v</code> : pour vérifier l'adresse du remote </li>
-<li><code>git push -u origin main</code> :  Push les changements locaux sur le remote que l'on a spécifié comme origine</li>
-<li><code>git push --set-upstream origin main</code> </li>
+<li>Pour installer un package python on utilise : <code>pip3 install nomDuModule</code>. Par exemple : <code>pip3 install panda</code></li>
+<li>Pour voir les package installés : <code>pip3 freeze</code></li>
+<li>
+<p>Pour donner les packages à installer aux autres programmeurs, il faut créer un fichier requirements.txt qui contient tous les noms de ces packages : <code>pip3 freeze &gt; requirements.txt</code></p>
+</li>
+<li>
+<p>Se placer dans le dossier de son projet</p>
+</li>
+<li><code>python -m venv env</code> : par convention on appelle toujours un environnement virtuel env </li>
+<li><code>source env/bin/activate</code>: pour l'activer . Il est nécessaire de toujours l'activer lorsque l'on veut travailler avec</li>
+<li><code>deactivate</code>: pour désactiver l'environnement virtuel python</li>
+<li>pip3 list : liste les paquets installés dans l'environnement virtuel</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">en cas d'erreur 'fetch first'</p>
-<p>Si l'erreur ! [rejected] main -&gt; main (fetch first) error apparait (par exemple si un README existait déjà) :</p>
-<p><code>git push -f origin main</code></p>
-</div>
-<h2 id="enregistrer-des-modifications">Enregistrer des modifications</h2>
+<h1 id="conda-miniconda-anaconda">Conda, Miniconda, Anaconda</h1>
+<p>Conda est un gestionnaire de paquets multiplateforme qui permet l’installation et la mise à jour de paquets (notamment Python).
+Permet d'installer dans le dossier d’installation de Conda, sans besoin d’accès administrateur.</p>
+<p>On peut au choix installer Anaconda ( = gestionnaire de paquet Conda + bibliothèques scientifiques + un environnement de développement…) ou Conda + qq bibliothèques en installant miniconda ou installer conda seulement comme gestionnaire de paquet.
+(double emploi avec pip3).</p>
+<p>Si l'on a déjà une version de Python installée, Conda demande lors de l’installation s’il faut mettre la version de Conda par défaut (consiste à redéfinir le PATH pour y ajouter le dossier bin de Conda.)
+Ainsi, les scripts lancés en tant qu’utilisateur à la main, de même que la commande python utiliseront le python de Conda, tandis que les scripts python du système continueront à utiliser le python du système.
+Si vous ne le faites pas, alors en lançant la commande python, vous arriverez sur le python système. Les bibliothèques installées avec Conda ne seront pas accessibles. Il vous faudra explicitement lancer la commande python du répertoire d’installation Conda pour avoir accès à ces dernières.</p>
+<p><code>conda update -n base -c defaults conda</code> : mettre à jour conda</p>
+<p><code>conda install noms_paquets</code>: pour installer un paquet
+<code>conda update noms_paquets</code>: pour mettre à jour un paquet
+<code>conda update --all</code>: mettre à jour tous les paquets
+<code>conda remove noms_paquets</code> : supprimer un paquet
+<code>conda list</code>: lister les paquets</p>
+<p><code>conda create -n myenv</code> : créer un environnement dans conda
+<code>conda install -n myenv noms_paquets</code> : pour installer un paquet dans myenv
+<code>conda info --envs</code> # forme courte : -e 
+<code>conda env list</code> : pour lister les environnements (celui avec * est le courant) sinon <code>conda info --envs</code>
+<code>conda activate myenv</code> : pour activer un environnement (celui de base s'appelle base: conda activate base)
+<code>conda deactivate</code> : pour désactiver un environnement 
+<code>conda env remove --name myenv</code> : supprimer un environnement</p>
+<p>Par défaut les environnements sont installés dans le dossier envs du dossier conda. 
+Avec pip on indique les packages dans un fichier requirements.txt, en général avec conda c'est dans un fichier environment.yml
+<code>conda env create -f environment.yml</code>: pour créer un environnement à partir du fichier environment.yml fourni. 
+Puis <code>conda activate myenv</code>
+<code>conda env export &gt; environment.yml</code> : pour exporter l'environnement actuel.</p>
+<p>On peut quand même utiliser pip dans un environnement conda, mais installer le plus possible les extensions avec conda d'abord. </p>
+<h1 id="des-extensions-recommandees-pour-vscode">Des extensions recommandées pour VSCode</h1>
 <ul>
-<li><code>git add *</code> : ajouter tous les nouveaux fichiers </li>
-<li><code>git commit -m "[message descriptif]"</code> : enregistre les changements dans l'historique des versions </li>
-<li><code>git pull</code>: Récupère tout l'historique du dépôt nommé et incorpore les modifications</li>
-<li><code>git push</code> : Envoie tous les commits de la branche locale vers GitHub</li>
-<li><code>git fetch</code> : permet de vérifier si le dépôt contient des mises à jour que vous n'auriez pas en local</li>
+<li>python</li>
+<li>Code Spell Checker et French - Code Spell Checker pour la correction orthographique</li>
+<li>git graph : visualisation des gits</li>
+<li>Material Icon Theme : pour de jolies icones</li>
 </ul>
-<h2 id="commandes-git-les-plus-utilisees">Commandes git les plus utilisées :</h2>
-<p><a href="../../ressources/github-cheatsheet.pdf">cheat-sheet</a></p>
+<p>bjoun cooment </p>
 
 
 
