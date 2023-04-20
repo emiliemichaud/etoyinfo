@@ -41,7 +41,7 @@ nav:
     - 'Plan d''études': 'OC/OCPE.md'
     
   - 'Outils':
-    - 'Git': 'Outils/utiliser-git.md'
+    - 'Git': 'Outils/utiliser_git.md'
     - 'VSCode': 'Outils/utiliser_vscode.md'
     
 extra_javascript:
