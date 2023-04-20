@@ -1,6 +1,6 @@
 # # Ignore all files in the 'EM_gitignore' subfolder.
 EM_gitignore/
-# site/
+site/
 
 
 # # OS generated files #
