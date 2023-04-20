@@ -49,6 +49,5 @@ nav:
     - 'VSCode': 'outils/utiliser_vscode.md'
     
 
-repo_url: https://github.com/emiliemichaud/etoyinfo
-
-repo_name: emiliemichaud/etoyinfo
+# repo_url: https://github.com/emiliemichaud/etoyinfo
+# repo_name: emiliemichaud/etoyinfo
