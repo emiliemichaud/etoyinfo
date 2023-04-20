@@ -3,6 +3,5 @@
 Différentes informations sont à disposition : 
 
 - Les plans d'études
-- Des outils 
+- Des tutoriels : Git et VSCode
 - Accès au [Moodle informatique](https://moodle.gyeto-info.ch)
-- ...
