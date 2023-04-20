@@ -28,5 +28,16 @@
 ##Annuler le suivi d'un fichier déjà archivé 
 - `git rm --cached FILENAME`
 
+##Réaliser une fusion avec les changements dépôt et local
+- `git checkout main`: se placer sur la branche principale 
+- `git merge mybranch`: pour grouper mybranch dans main 
+
+
 ##Commandes git les plus utilisées :
+- `git branch -r`: voir les branches du dépôt
 [cheat-sheet](../ressources/github-cheatsheet.pdf)
+
+##Erreurs : 
+- Après un git pull il peut y avoir l'erreur "hint: You have divergent branches and need to specify how to reconcile them.".
+git pull est la fusion de deux commandes `git fetch`(pour récupérer le dépôt distant vers le dépôt local) et `git merge` (pour les fusionner)
+Pour solutionner cette 
