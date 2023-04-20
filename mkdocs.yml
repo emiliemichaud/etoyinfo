@@ -13,6 +13,7 @@ theme:
       - navigation.top # bouton pour remonter tout en haut de la page
       - toc.integrate # Table Of Content, table des matières intégrée dans la barre verticale de navigation
       - header.autohide # masquage automatique de l'en tête du site lorsque l'on descend dans la page
+      - navigation.footer # ajout nav dans footer
 
 
 markdown_extensions:
@@ -36,10 +37,8 @@ nav:
     - 'Plan d''études': '1M/1MPE.md'
   - '2M':
     - 'Plan d''études': '2M/2MPE.md'
-    # - 'Algorithmie': '2M/2M-algo.md'
   - 'OC':
-    - 'Plan d''études': 'OC/OCPE.md'
-    
+    - 'Plan d''études': 'OC/OCPE.md'    
   - 'Outils':
     - 'Git': 'Outils/utiliser_git.md'
     - 'VSCode': 'Outils/utiliser_vscode.md'
@@ -48,3 +47,5 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 
+extra:
+  generator: false # supprime le footer made with
