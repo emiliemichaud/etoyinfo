@@ -5,3 +5,4 @@ Différentes informations sont à disposition :
 - Les plans d'études
 - Des outils 
 - Accès au [Moodle informatique](https://moodle.gyeto-info.ch)
+- ...
