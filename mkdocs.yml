@@ -30,6 +30,11 @@ markdown_extensions:
       custom_checkbox: true    #   avec cases d'origine
       clickable_checkbox: true    #   et cliquables.
 
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  generator: false # supprime le footer made with
 
 nav:
   - 'Accueil': 'index.md'
@@ -43,9 +48,3 @@ nav:
     - 'Git': 'outils/utiliser_git.md'
     - 'VSCode': 'outils/utiliser_vscode.md'
     
-extra_javascript:
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
-
-extra:
-  generator: false # supprime le footer made with
