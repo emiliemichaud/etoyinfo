@@ -39,8 +39,10 @@ nav:
     # - 'Algorithmie': '2M/2M-algo.md'
   - 'OC':
     - 'Plan d''études': 'OC/OCPE.md'
-    - 'Git': 'OC/OC-git.md'
-
+    
+  - 'Outils':
+    - 'Git': 'Outils/utiliser-git.md'
+    - 'VSCode': 'Outils/utiliser_vscode.md'
     
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

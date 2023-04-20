@@ -25,5 +25,8 @@
 - `git push` : Envoie tous les commits de la branche locale vers GitHub
 - `git fetch` : permet de vérifier si le dépôt contient des mises à jour que vous n'auriez pas en local
 
+##Annuler le suivi d'un fichier déjà archivé 
+- `git rm --cached FILENAME`
+
 ##Commandes git les plus utilisées :
 [cheat-sheet](../ressources/github-cheatsheet.pdf)
