@@ -33,9 +33,6 @@
 - `git merge mybranch`: pour grouper mybranch dans main 
 
 
-##Commandes git les plus utilisées :
-- `git branch -r`: voir les branches du dépôt
-[cheat-sheet](../ressources/github-cheatsheet.pdf)
 
 ##Résolution d'un conflit 
 - Si un fichier est modifié en local et sur le dépôt distant, on se trouve dans le cas d'un conflit à résoudre après avoir réalisé un git pull.
@@ -50,3 +47,8 @@ hint: preference for all repositories. You can also pass --rebase, --no-rebase,
 hint: or --ff-only on the command line to override the configured default per
 hint: invocation."
 Passer en deux étapes avec git fetch puis git merge  -->
+
+## Ressources:
+- `git branch -r`: voir les branches du dépôt
+[cheat-sheet](../ressources/github-cheatsheet.pdf)
+- https://pcottle.github.io/learnGitBranching/?locale=fr_FR&demo : Site pour visualiser les effets des commandes sur les branches
