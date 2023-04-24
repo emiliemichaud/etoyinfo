@@ -52,3 +52,4 @@ Passer en deux étapes avec git fetch puis git merge  -->
 - `git branch -r`: voir les branches du dépôt
 [cheat-sheet](../ressources/github-cheatsheet.pdf)
 - https://pcottle.github.io/learnGitBranching/?locale=fr_FR&demo : Site pour visualiser les effets des commandes sur les branches
+- https://www.youtube.com/watch?v=apGV9Kg7ics&t=7s : tutoriel youtube utilisation de github
