@@ -58,7 +58,7 @@ hint: or --ff-only on the command line to override the configured default per
 hint: invocation."
 Passer en deux étapes avec git fetch puis git merge  -->
 
-## Ressources:
+## Ressources
 <!-- - `git branch -r`: voir les branches du dépôt -->
 - [cheat-sheet](../ressources/github-cheatsheet.pdf) : PDF contenant les commandes de base de github
 - https://pcottle.github.io/learnGitBranching/?locale=fr_FR&demo : Site pour visualiser les effets des commandes sur les branches
