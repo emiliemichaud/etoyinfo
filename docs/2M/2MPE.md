@@ -5,5 +5,5 @@ Cinq thèmes sont au programme de 2M :
 - Algorithmique 
 - Programmation
 - Réseaux
-- Projets informatiques
+<!-- - Projets informatiques -->
 - Enjeux de société

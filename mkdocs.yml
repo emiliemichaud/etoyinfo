@@ -7,6 +7,7 @@ site_author: "EM - GYETO"
 theme: 
   name: material # autres thèmes : https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
   # Configuration du comportement de la navigation, cf : https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
+  custom_dir: my_theme_customizations/
   features: 
       - navigation.instant # active XHR https://fr.wikipedia.org/wiki/XMLHttpRequest
       - navigation.tabs # Menu de navigation horizontal sous l'en-tête sauf sur appareil mobile
@@ -15,6 +16,9 @@ theme:
       - header.autohide # masquage automatique de l'en tête du site lorsque l'on descend dans la page
       - navigation.footer # ajout nav dans footer
 
+plugins:
+  - search
+  - macros
 
 markdown_extensions:
   - attr_list
@@ -35,6 +39,14 @@ extra_javascript:
 
 extra:
   generator: false # supprime le footer made with
+  ace_style: # modification du style pyodide
+    default: crimson_editor 
+    slate: tomorrow_night_bright
+
+
+
+# extra_css:
+#   - xtra/stylesheets/pyoditeur.css
 
 nav:
   - 'Accueil': 'index.md'
@@ -47,7 +59,8 @@ nav:
   - 'Outils':
     - 'Git': 'outils/git.md'
     - 'VSCode': 'outils/vscode.md'
-    
+    - 'Accès au terminal Python en ligne' : 'outils/terminal.md'
+    - 'Liens vers des ressources' : 'outils/liens.md'
 
 # repo_url: https://github.com/emiliemichaud/etoyinfo
 # repo_name: emiliemichaud/etoyinfo
